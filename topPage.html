@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>topPage version1.0</title>
+<link rel="stylesheet" type="text/css" href="topPage.css">
+<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+<script src="topPage.js"></script>
+</head>
+<body>
+<section>
+<table id="search_table" class="type01">
+	<tr>
+		<th>表示名</th>
+		<td>
+            <input type="text" name="show_name" id="show_name" value="" class="text_type01">
+            <input type="hidden" name="data_id" id="data_id" value="">
+        </td>
+	</tr>
+	<tr>
+		<th>リンク先</th>
+		<td><input type="text" name="link_url" id="link_url" value="" class="text_type01"></td>
+	</tr>
+	<tr>
+		<th>グループ</th>
+		<td>
+            <select name="group_no" id="group_no" class="type01">
+                <option value="99">ニュース</option>
+                <option value="98">買い物</option>
+                <option value="97">技術参考</option>
+                <option value="96">その他</option>
+            </select>
+            </td>
+	</tr>
+	<tr>
+		<th>表示順番</th>
+		<td><input type="number" name="show_no" id="show_no" value="99" class="text_type01"></td>
+	</tr>
+	<tr>
+		<th>備考</th>
+		<td><input type="text" name="show_title" id="show_title" value="" class="text_type01"></td>
+	</tr>
+    <tr>
+        <td colspan="2">
+            <input type="button" name="add_btn" id="add_btn" value="新規登録" class="btn_type01">
+            <input type="button" name="update_btn" id="update_btn" value="既存更新" class="btn_type01">
+            <input type="button" name="delete_btn" id="delete_btn" value="DB削除" class="btn_type01">
+            <input type="button" name="export_btn" id="export_btn" value="データ抽出" class="btn_type01">
+            <input type="button" name="import_btn" id="import_btn" value="データ投入" class="btn_type01">
+        </td>
+    </tr>
+</table>
+</section>
+<section>
+<p id="msg_area" class="msg_type01">動作状態はここで表しています。</p>
+</section>
+<section>
+<table id="show_data_table" class="type02">
+	<tr>
+		<th>表示名</th>
+		<th>操作</th>
+	</tr>
+</table>
+</section>
+<section>
+    <textarea name="export_area" id="export_area" class="area_type01"></textarea>
+    <textarea name="import_area" id="import_area" class="area_type01"></textarea>
+</section>
+<section id="page_top_link">
+    <br><br>
+    <input type="button" name="pagetop_btn" id="pagetop_btn" value="PAGE TOP" class="btn_type01">
+    <br><br>
+</section>
+</body>
+</html>
