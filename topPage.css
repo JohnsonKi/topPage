@@ -63,6 +63,14 @@ select.type01 {
     line-height: 30px;
     font-size: 18px;
 }
+
+select.type02 {
+    width:500px;
+    height:35px;
+    text-indent: 5px;
+    line-height: 30px;
+    font-size: 18px;
+}
 input.btn_type01 {
 	background: #09C;
 	border: 1px solid #DDD;
